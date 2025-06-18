@@ -1,7 +1,3 @@
-Got it! Here's the updated README without the license section:
-
----
-
  LinkedIn Job Simulator 🚀
 
 Welcome to the **LinkedIn Job Simulator**—an innovative tool that empowers you to generate highly customized job posts for LinkedIn with just a few clicks! Whether you're a job seeker crafting the perfect job post or a company looking to create compelling job listings, this app has you covered. Generate professional, well-crafted text job posts effortlessly.
