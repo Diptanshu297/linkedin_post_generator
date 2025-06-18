@@ -75,5 +75,3 @@ Suggested Contributions:
  🚀 Ready to generate your perfect LinkedIn job post? Go ahead, try it now!
 
 ---
-
-Let me know if you'd like any more changes!
