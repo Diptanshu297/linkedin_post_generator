@@ -36,7 +36,7 @@ bash
 streamlit run app.py
 
 
-Open your browser and head to `http://localhost:8501` to start generating job posts!
+Open your browser and head to `http://localhost:8501` to start generating job posts! or you can use any PORT to your liking.
 
  🔧 Configuration
 
