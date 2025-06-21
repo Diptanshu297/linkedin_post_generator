@@ -35,7 +35,7 @@ A clean and minimal user interface built with [Streamlit](https://streamlit.io),
 
 This project has two main parts:
 
-### 1. **Frontend (User Interface) – app.py**
+### 1. **Frontend (User Interface) – main.py**
 
 * Built using **Streamlit**
 * Lets you select post length, tone, language, and topic
