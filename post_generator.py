@@ -1,4 +1,4 @@
-# post_generator.py
+
 from llm_helper import llm
 from few_shot import FEW_SHOT_EXAMPLES
 
@@ -21,7 +21,6 @@ Begin your new post now:
     response = llm.invoke(prompt)
     text = response.content.strip()
 
-    # Prompt for image generation
     image_prompt = f"Professional, LinkedIn-style image representing '{tag}' in {language}. Minimalist, motivational, and clean design."
 
     return text, image_prompt
