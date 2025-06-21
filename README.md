@@ -1,7 +1,3 @@
-Got it. Here's a more **detailed and crystal-clear version** of your README-style project description — rewritten for maximum clarity so that even someone with no context or experience can understand exactly what the **LinkedIn Post Generator** does, how to use it, and how it's structured:
-
----
-
 # 🚀 LinkedIn Post Generator – AI-Powered Content Creator for LinkedIn
 
 Welcome to the **LinkedIn Post Generator** — a simple yet powerful web app that uses AI to help you create professional, personalized, and engaging job-style posts for LinkedIn in just a few seconds.
@@ -147,7 +143,3 @@ Fork it, build it, and submit a PR!
 
 Click that GitHub link, follow the steps, and start generating content like a pro 💼✨
 Let the AI do the heavy lifting — you just hit "Post" 🙌
-
----
-
-Let me know if you’d like this turned into a full `README.md` file or a post template for LinkedIn!
