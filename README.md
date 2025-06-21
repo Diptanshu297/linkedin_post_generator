@@ -16,7 +16,7 @@ Welcome to the **LinkedIn Job Simulator**—an innovative tool that empowers you
 First, get the code onto your local machine:
 
 
-git clone https://github.com/yourusername/linkedin-job-simulator.git
+git clone: https://github.com/Diptanshu297/linkedin_post_generator.git
 cd linkedin-job-simulator
 
 
