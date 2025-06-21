@@ -1,30 +1,27 @@
-
 from llm_helper import llm
 from few_shot import FEW_SHOT_EXAMPLES
 
 def generate_post(length: str, language: str, tag: str, tone: str) -> tuple[str, str]:
-
     prompt = f"""
-You are a professional LinkedIn influencer. 
+You are a professional LinkedIn influencer.
 Generate a post that is:
 - Emotionally engaging
 - Written in {language}
 - About: {tag}
 - Length: {length}
+- Tone: {tone}
 
 Example Posts:
-{FEW_SHOT_EXAMPLES}
+{FEW_SHOT_EXAMPLES()}
 
 Begin your new post now:
 """
-
     response = llm.invoke(prompt)
     text = response.content.strip()
 
     image_prompt = f"Professional, LinkedIn-style image representing '{tag}' in {language}. Minimalist, motivational, and clean design."
 
     return text, image_prompt
-
 
 def rewrite_post(original: str, instruction: str) -> str:
     prompt = f"""
@@ -37,8 +34,6 @@ Rewritten Post:
 """
     response = llm.invoke(prompt)
     return response.content.strip()
-
-
 
 def enhance_post(post: str) -> str:
     prompt = f"""
