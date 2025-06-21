@@ -1,7 +1,6 @@
 import pandas as pd
 import json
 
-
 class FewShotPosts:
     def __init__(self, file_path="data/processed_posts.json"):
         self.df = None
@@ -13,15 +12,15 @@ class FewShotPosts:
             posts = json.load(f)
             self.df = pd.json_normalize(posts)
             self.df['length'] = self.df['line_count'].apply(self.categorize_length)
-            
+
             all_tags = self.df['tags'].apply(lambda x: x).sum()
             self.unique_tags = list(set(all_tags))
 
     def get_filtered_posts(self, length, language, tag):
         df_filtered = self.df[
-            (self.df['tags'].apply(lambda tags: tag in tags)) &  
-            (self.df['language'] == language) &  
-            (self.df['length'] == length)  
+            (self.df['tags'].apply(lambda tags: tag in tags)) &
+            (self.df['language'] == language) &
+            (self.df['length'] == length)
         ]
         return df_filtered.to_dict(orient='records')
 
@@ -36,13 +35,8 @@ class FewShotPosts:
     def get_tags(self):
         return self.unique_tags
 
-
-if __name__ == "__main__":
-    fs = FewShotPosts()
-    
-    posts = fs.get_filtered_posts("Medium","Hinglish","Job Search")
-    print(posts)
-
+few_shot_instance = FewShotPosts()
 
 def FEW_SHOT_EXAMPLES():
-    return None
+    examples = few_shot_instance.get_filtered_posts("Medium", "English", "Job Search")
+    return "\n\n".join(post['text'] for post in examples[:3])
